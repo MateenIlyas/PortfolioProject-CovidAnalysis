@@ -32,9 +32,15 @@
 > Next, find the maximum cases and the maximum percentage of total cases to the total population for each country.<br />
 > This can be done using the MAX function and the GROUP BY statement on continent and location.<br />
 > To correctly order based on the percentage descendingly, first, the percent sign needs to be taken away using the REPLACE function.<br />
-> Next, the value needs to be converted to float by using the CAST function.
+> Next, the value needs to be converted to float by using the CAST function.<br />
+> Similarly, the max of total deaths and percentage of total deaths to the total population for each country can be found.
 
 <br />
 
+> Next, the sum of new cases and new deaths can be found using the SUM function.<br />
+> It can be grouped on the date column to determine the sum of new cases and new deaths for all countries on each date.<br />
+> It should be ordered on the date column so that the data shows up in an ascending manner from earliest to the latest.
+
+<br />
 
 
