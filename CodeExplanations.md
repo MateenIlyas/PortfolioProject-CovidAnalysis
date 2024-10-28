@@ -43,4 +43,27 @@
 
 <br />
 
+> Join the two tables on the basis of date and location columns so that the vaccination records can be observed for each country.<br />
+> First, select all columns of both tables to choose the desired columns for the next query.<br />
+> Next, select the continent, location, date, and population from the COVID Deaths table and the new vaccinations column from the COVID Vaccinations table.<br />
+> Make sure to filter the data using the continent is NOT NULL condition so that only the countries' data will be selected, excluding the continents' data.<br /> 
+> The rolling sum of vaccinations for each country can be calculated by using the SUM function alongside PARTITION BY and the ORDER BY clause inside it.
 
+<br />
+
+> The percentage of new vaccinations to the total population can be calculated by encapsulating the previous query in a CTE.<br />
+> Next, we can use the FORMAT function to display the values and the percent sign correctly.
+
+<br />
+
+> A similar task can be achieved via the temp table.<br />
+> A temp table can be created by using CREATE TABLE statement and then the temp table should start with # sign.<br />
+> In the temp table, the column names and their data types need to be provided.<br />
+> Then, the INSERT INTO statement will be used to insert all data into the temp table.<br />
+> The temp table can be called using the SELECT statement, and it will display all columns of the temp table.<br />
+> The percentage of new vaccinations to the total population can be calculated, and the FORMAT function can be used to convert the value in percentages properly.
+
+<br />
+
+> A VIEW can be created to easily access the records for subsequent usage such as analysis or visualizations, etc.<br />
+> For this purpose, we will use the CREATE VIEW [view_name] AS statement, followed by the query.
