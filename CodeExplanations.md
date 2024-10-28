@@ -22,7 +22,8 @@
 > Calculate the percentage of total deaths to the total cases, but ensure that the denominator is not equal to 0.<br />
 > This can be done by using the NULLIF function on the denominator to compare its value with 0.<br />
 > Similarly, the ISNULL function can be used to return 0 instead of throwing an error of dividing by 0.<br />
-> CAST both values as FLOAT before calculating the percentage.<br />
+> CAST both values as FLOAT (or at least one of them) before calculating the percentage.<br />
+> This is important. Otherwise, the result will be equal to 0, as SQL will not correctly display the value of each percentage.<br />
 > Or the FORMAT function can be used to convert the result to percent.<br />
 > A similar process can be used to find the percentage of total cases to the total population.
 
